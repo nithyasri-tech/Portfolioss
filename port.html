@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nithyasri Portfolio</title>
+
+<!-- ✅ ICON LINK (ADDED ONLY THIS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a192f;
+  color: #ccd6f6;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: #112240;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+nav a {
+  color: #ccd6f6;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #64ffda;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.typing {
+  font-size: 40px;
+  font-weight: bold;
+  color: #64ffda;
+  border-right: 3px solid #64ffda;
+  padding-right: 5px;
+}
+
+.hero img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background: #112240;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: #112240;
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.project h3, .project p {
+  text-align: center;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #64ffda;
+  color: #0a192f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project a:hover {
+  background: #52e0c4;
+  transform: scale(1.05);
+}
+
+/* CERTIFICATIONS */
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cert {
+  background: #112240;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cert:hover {
+  transform: scale(1.05);
+}
+
+.cert img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  top: 0;
+}
+
+.modal img {
+  display: block;
+  margin: 5% auto;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ✅ CONTACT STYLE (ONLY ADDED THIS) */
+.contact-info p, .contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+.contact-info i {
+  color: #64ffda;
+}
+
+.contact-info a:hover {
+  color: #64ffda;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #112240;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1><span class="typing"></span></h1>
+    <p>Full Stack Developer</p>
+  </div>
+  <img src="nithyasri-photo.jpeg">
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>A Full Stack Developer is a software engineer who works on both the front-end and back-end of web applications.
+    am continuously learning new technologies and improving my coding skills. My goal is to secure a good placement and grow as a professional developer. 
+    I am also focused on developing strong problem-solving and communication skills.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">
+      <h3>Full Stack</h3>
+      <p>HTML, CSS, JavaScript, React, Node.js</p>
+    </div>
+    <div class="skill-box">
+      <h3>Database</h3>
+      <p>MySQL, MongoDB</p>
+    </div>
+    <div class="skill-box">
+      <h3>Programming</h3>
+      <p>JavaScript</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <h3>SavEarn - Finance Dashboard</h3>
+      <img src="SavEarn.png">
+      <p>Finance budgeting system</p>
+      <a href="https://github.com/nithyasri-tech/Calenova--One-Page-Calenderr" target="_blank">Visit → GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Calanova</h3>
+      <img src="calanova.png">
+      <p>One page Calendar</p>
+      <a href="https://github.com/nithyasri-tech/Calenova--One-Page-Calenderr" target="_blank">Visit → GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certifications">
+    <div class="cert" onclick="openModal('java.png')">
+      <h3>Java</h3>
+      <img src="java.png">
+    </div>
+
+    <div class="cert" onclick="openModal('practical.png')">
+      <h3>Cyber Security</h3>
+      <img src="practical.png">
+    </div>
+
+    <div class="cert" onclick="openModal('Sql Injection.png')">
+      <h3>SQL Injection</h3>
+      <img src="Sql Injection.png">
+    </div>
+
+    <div class="cert" onclick="openModal('problem-hackerrank.png')">
+      <h3>Problem Solving</h3>
+      <img src="problem-hackerrank.png">
+    </div>
+  </div>
+</section>
+
+<!-- ✅ ONLY CONTACT CHANGED -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> nithyasri0810@gmail.com</p>
+    <p><i class="fas fa-phone"></i> 9790522833</p>
+    <a href="https://github.com/nithyasri-tech" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/nithyasri-mathiyazhagan-/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Nithyasri</p>
+</footer>
+
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modal-img">
+</div>
+
+<script>
+const text = "Hi, I'm Nithyasri";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.querySelector(".typing").textContent += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 100);
+  }
+}
+typeEffect();
+
+function openModal(src) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("modal-img").src = src;
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
